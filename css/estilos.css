@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Source Sans 3', sans-serif;
+    box-sizing: border-box;
+}
+/* _____________________________________________ */
+
+/* CABECERA */
+
+.cabeceraPrincipal {
+    padding: 1.5rem 16% 0;
+}
+
+/* Título */
+h1 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 4.5rem;
+    font-weight: 400;
+    letter-spacing: -0.1em;
+}
+
+/* Enlaces */
+h1 a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Parte responsive */
+/* 0 a 768px */
+@media (min-width: 768px)
+{
+
+    h1 {
+        text-align: start;
+    }
+}
+/* _____________________________________________ */
+
+/* NAVEGADOR */
+.menuNavegacion {
+    padding: 0.7rem 16% 1.7rem;
+    box-shadow: 0 5px 5px rgb(245, 245, 245);
+    background-color: white;
+}
+
+.menuNavegacion li {
+    display: block;
+    text-align: center;
+}
+
+.menuNavegacion ul li {
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+}
+
+/* Enlaces */
+.menuNavegacion a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Span (Página actual) */
+nav span {
+    color: rgb(222, 35, 51);
+}
+
+/* Parte responsive */
+@media (min-width: 768px) {
+    .menuNavegacion {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .menuNavegacion ul li {
+        display: inline;
+    }
+
+}
+/* _____________________________________________ */
+/* PIE DE PÁGINA */
+footer {
+    color: white;
+    background-color: black;
+    padding: 3rem 16%;
+
+}
+
+/* Enlaces */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(222, 35, 51);
+
+}
+
+.redes img:hover {
+    opacity: 0.7;
+}
+
+/* Listas */
+.informacionExtra li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.redes li {
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+}
+.redes {
+    margin: 0.4rem 0 1.1rem;
+}
+
+/* Párrafos */
+footer p {
+    font-size: 0.85rem;
+}
+
+/* Parte responsive */
+/* 0 a 768px */
+@media (max-width: 768px)
+{
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+/* 768 a ... */
+@media (min-width: 768px) {
+    footer ul li {
+        display: inline;
+    }
+
+    .informacionExtra li:not(:last-child)::after {
+        display: inline-block;
+        margin: 0 0.5rem 0 0.7rem;
+        content: "•";
+    }
+}
+/* _____________________________________________ */
+
+/* MAIN */
+/* --------------------INDEX-------------------- */
+/* Cabecera principal */
+#cabeceraIndex {
+    background-image:url(../img/bg-hero-home-m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8.5rem 5%;
+}
+
+#cabeceraIndex h2 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 4rem;
+}
+
+/* --- Parte responsive (Cabecera principal) ------------*/
+@media (min-width: 576px) {
+    #cabeceraIndex h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #cabeceraIndex h2 {
+        font-size: 3.5rem;
+        padding: 0 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    #cabeceraIndex h2 {
+        font-size: 4rem;
+    }
+
+    #cabeceraIndex {
+        background-image:url(../img/bg-hero-home.jpg);
+    }
+}
+
+@media (min-width: 1200px) {
+    #cabeceraIndex h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    #cabeceraIndex h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+}
+/*-------------------------------------------------------*/
+
+/* Cabeceras de secciones */
+h3 {
+    padding: 2.1rem 0 1.5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sección introducción */
+#introduccion {
+    padding: 0 5%;
+}
+
+/* Texto introduccion */
+#introduccion p {
+    font-size: 1.3rem;
+}
+
+#introduccion p + p {
+    margin-top: 1rem;
+}
+
+#introduccion p span {
+    font-weight: bold;
+}
+
+/* --- Introducción (Cabecera principal) ----------------*/
+@media (min-width: 576px) {
+    #introduccion {
+        padding: 0 5%;
+    }
+    
+    #introduccion p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #introduccion p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #introduccion p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    #introduccion {
+        padding: 0 25%;
+    }
+}
+/*-------------------------------------------------------*/
+
+/* Sección al día */
+#alDia {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+
+/* Artículos */
+#alDia article {
+    flex-basis: 80%;
+}
+
+/* Textos */
+#alDia h4 {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+}
+
+#alDia p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+#alDia p + p {
+    color: rgb(222, 35, 51);
+    font-size: 0.8rem;
+    padding: 1rem 0 5rem;
+}
+
+/* Enlaces */
+#alDia a {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#alDia a:hover {
+    color: rgb(0, 0, 0);
+
+}
+
+/* Imágenes */
+#alDia img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+/* --- Parte responsive (Sección Al día) ------------*/
+@media (min-width: 768px) {
+    #alDia article {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    #alDia {
+        width: 93%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #alDia {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #alDia {
+        width: 68%;
+    }
+}
+/*-------------------------------------------------------*/
+
+/* ---------------APLICACIONES---------------- */
+/* Contenedores */
+#aplicaciones {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(300px, 400px)
+    );
+    gap: 3rem;
+    place-content: center;
+}
+
+#aplicaciones div {
+    background-color: #F4F6F7;
+    padding: 1.9rem 1.8rem 1rem;
+}
+
+#aplicaciones h4 {
+    
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2.5rem;
+}
+
+#aplicaciones p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+#aplicaciones p + p {
+    color: rgb(222, 35, 51);
+    font-size: 0.8rem;
+    padding: 1rem 0 0;
+}
+
+/* Enlaces */
+#aplicaciones a {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#aplicaciones a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* --- Parte responsive (Sección Aplicaciones) ------------ */
+@media (min-width: 576px) {
+    #aplicaciones {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    #aplicaciones {
+        max-width: 90%;
+    }
+
+    #aplicaciones h4 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    #aplicaciones {
+        gap: 5rem;
+    }
+}
+/* ----------------EN EL CINE----------------- */
+
+/* Contenedores */
+#iaEnElCine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#iaEnElCine div {
+    position: relative;
+    flex-basis: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+
+#iaEnElCine iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Textos */
+#iaEnElCine figcaption {
+    background-color: #F4F6F7;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+#iaEnElCine span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* --- Parte responsive (Sección En el cine) ------------*/
+@media (min-width: 992px) {
+    #iaEnElCine {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #iaEnElCine figure {
+        flex-basis: 49%;
+    }
+
+    #iaEnElCine {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #iaEnElCine {
+        
+        width: 67%;
+    }
+}
+/*-------------------------------------------------------*/
+
+/* --------------DESPACHO 42------------------ */
+
+/* Contenedores (Grid) */
+#despacho42 {
+    padding: 0 5%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-items: center;
+}
+
+/* --- Parte responsive (Sección Despacho 42) ------------*/
+@media (min-width: 1200px) {
+    #despacho42 {
+        grid-template-columns: 7fr 3fr; 
+        grid-column-gap: 5rem;
+        padding: 0 5%;
+    }
+
+    #despacho42 nav {
+        grid-column: 1 / 3;
+    }
+    
+    #despacho42 aside {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    #comentarios {
+        grid-column: 1 / 2;
+    }
+}
+
+@media (min-width: 1400px) {
+    #despacho42 {
+        padding: 0 16%;
+    }
+}
+/*-------------------------------------------------------*/
+
+/* Ruta de navegación */
+.rutaNavegacion li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 1rem 0 0.5rem;
+    content: ">";
+    font-size: 0.9rem;
+    margin-right: 0rem;
+}
+.rutaNavegacion {
+    padding: 3rem 0;
+}
+
+.rutaNavegacion ul li {
+    display: inline;
+    font-size: 0.9rem;
+}
+
+.rutaNavegacion a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Sección principal */
+/* Imagen */
+#despacho42 header img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/*Textos */
+#despacho42 header p {
+    font-size: 0.95rem;
+}
+
+#despacho42 h3 {
+    text-align: start;
+    line-height: 2.6rem;
+}
+
+#despacho42 p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#despacho42 h4 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-bottom: 1rem;
+}
+#despacho42 h5 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Enlaces */
+#articulo a {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#articulo a:hover {
+    color: black;
+}
+
+#enlaceArticulo a {
+    font-size: 0.9rem;
+}
+
+#enlaceArticulo {
+    line-height: 1.1rem;
+    padding-bottom: 2rem;
+}
+
+/* Sección presentación Despacho 42*/
+
+/* Bloques (Grid) */
+#queEsDespacho42 {
+    background-color: #F4F6F7;
+    padding: 3rem 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Imagen */
+#queEsDespacho42 img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+/* Textos */
+#queEsDespacho42 h4 {
+    margin: 1rem 0;
+}
+
+#queEsDespacho42 p {
+    margin-bottom: 0;
+}
+
+#queEsDespacho42 ul {
+    color: rgb(222, 35, 51);
+    line-height: 1.1rem;
+    list-style-type: none;
+}
+
+#queEsDespacho42 ul p {
+    color: rgb(222, 35, 51);
+    font-size: 0.9rem;
+}
+
+/* Enlaces */
+#queEsDespacho42 p a {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#queEsDespacho42 p a:hover {
+    color: black;
+}
+/* --- Parte responsive (Sección presentación Despacho 42) ------------*/
+@media (min-width: 768px) {
+    #queEsDespacho42 {
+        grid-template-columns: 80px 1fr;
+        column-gap: 1.5rem;
+    }
+    
+    #queEsDespacho42 p, h4, ul {
+        grid-column: 2 / 3;
+    }
+}
+/*-------------------------------------------------------*/
+
+
+/* Comentarios */
+#comentarios {
+    width: 100%;
+}
+
+#comentarios p {
+    font-size: 0.8rem;
+}
+
+#comentarios label {
+    font-size: 1.2rem;
+}
+
+#comentarios textarea, br + input {
+    background-color: #F4F6F7;
+    border: none;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#comentarios textarea {
+    height: 150px;
+}
+
+#comentarios br + input {
+    height: 50px;
+}
+
+#comentarios ul {
+    list-style-type: none;
+}
+
+#comentarios ul a {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+}
+
+#comentarios ul a:hover {
+    color: black;
+}
+
+#comentarios button {
+    background-color: rgb(222, 35, 51);
+    padding: 0.1rem 0.5em;
+    color: white;
+    font-size: 1.3rem;
+    margin: 1em 0 3em 0;
+}
+
+/* Aside */
+aside {
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+aside article {
+    height: 115px;
+    padding-bottom: 5rem;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted rgb(0, 0, 0); 
+}
+
+aside h3 {
+    padding: 0 0 2.5rem;
+    text-align: start;
+}
+
+aside h6 {
+    font-size: 1rem;
+}
+
+aside img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    float: left;
+    margin-right: 1rem;
+}
